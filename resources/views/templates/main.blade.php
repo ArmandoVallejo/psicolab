@@ -15,16 +15,16 @@
     <header class="fixed w-screen flex justify-center items-center h-18 top-0 bg-[#2C3E50] text-white">
         <nav class="w-full flex justify-between items-center px-4">
          
-            <div class="flex items-center justify-center w-4/12">
+            <div class="flex items-center justify-center w-4/12 space-x-2">
                 <img src="{{ asset('img/PsicoLogo.png') }}" alt="Logo" class="h-12">
-                <h1 class="ml-2 text-3xl">Psicolab</h1>
+                <h1 class="ml-2 text-3xl">PsicoLab</h1>
             </div>
     
          
-            <ul class="flex justify-center w-4/12 space-x-6">
-                <li><a href="{{url('/')}}" class="hover:text-gray-300 text-xl">Home</a></li>
-                <li><a href="{{route('register')}}" class="hover:text-gray-300 text-xl">Register</a></li>
-                <li><a href="{{route('login')}}" class="hover:text-gray-300 text-xl">Login</a></li>
+            <ul class="flex justify-center w-4/12 space-x-8">
+                <li><a href="{{url('/')}}" class="hover:text-gray-300 text-2xl">Home</a></li>
+                <li><a href="{{route('register')}}" class="hover:text-gray-300 text-2xl">Register</a></li>
+                <li><a href="{{route('login')}}" class="hover:text-gray-300 text-2xl">Login</a></li>
             </ul>
     
            
