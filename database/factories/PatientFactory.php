@@ -4,6 +4,8 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Patient;
+use Illuminate\Container\Attributes\Auth;
+use App\Models\User;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Patient>
@@ -28,6 +30,7 @@ class PatientFactory extends Factory
             'birth_date' => fake()->dateTimeBetween('-80 years', '-18 years')->format('Y-m-d'), // Edad entre 18 y 80 años
             'sex' => fake()->randomElement(['Male', 'Female']),
             'genre' => fake()->word(),
+            'user_id' => 1,
             'reason_for_visit' => fake()->sentence()
         ];
     }

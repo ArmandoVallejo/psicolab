@@ -19,6 +19,7 @@ return new class extends Migration
             $table->enum('sex', ['Male', 'Female'])->default('Male');
             $table->string('genre', 30);
             $table->string('reason_for_visit', 150);
+            $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('set null');
             $table->timestamps();
         });
     }

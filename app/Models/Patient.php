@@ -28,4 +28,14 @@ class Patient extends Model
     protected $casts = [
         'birth_date' => 'date',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function clinicalHistories()
+    {
+        return $this->hasOne(ClinicalHistory::class);
+    }
 }
