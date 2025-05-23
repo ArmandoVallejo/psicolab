@@ -44,7 +44,7 @@
                 <!-- Botón de Enviar -->
                 <div class="flex justify-center">
                     <button type="submit"
-                        class="w-full px-4 py-2 bg-[#2C3E50] text-white text-xl rounded-md hover:scale-105 hover:cursor-pointer transition">
+                        class="btn btn-soft btn-wide">
                         Login
                     </button>
                 </div>
